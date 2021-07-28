@@ -72,18 +72,17 @@ public class App
                     
                     if(splitdata.length > 3)
                     {
-                        //System.out.print(splitdata[4]);
                         String splitdata2[] = splitdata[4].trim().split("");
                         int counter = 0;
                         String weight = "";
                         for(int i=splitdata2.length-1; i>=0; i--){
-                            if(counter >= 4){
+                            if(counter < 3){
                                 weight = weight + splitdata2[i];
                             }
                             counter++;
                             
                         }
-                        System.out.println(weight);
+                        System.out.println(Integer.parseInt(weight));
                     }
                     
 
